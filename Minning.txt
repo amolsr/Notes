@@ -1,0 +1,105 @@
+amolsr@DESKTOP-DO2TLJF:/mnt/c/Users/student/Desktop/amolsr/BlockChain$ /mnt/c/Users/student/Desktop/amolsr/Geth/geth.exe --datadir ~/.ethereum/net219102019 init genesis219102019.json
+INFO [10-19|16:50:34.057] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-19|16:50:34.094] Allocated cache and file handles         database=C:\\home\\amolsr\\.ethereum\\net219102019\\geth\\chaindata cache=16.00MiB handles=16
+INFO [10-19|16:50:34.316] Writing custom genesis block
+INFO [10-19|16:50:34.322] Persisted trie from memory database      nodes=0 size=0.00B time=0s gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-19|16:50:34.334] Successfully wrote genesis state         database=chaindata hash=edb0d2…8fd420
+INFO [10-19|16:50:34.338] Allocated cache and file handles         database=C:\\home\\amolsr\\.ethereum\\net219102019\\geth\\lightchaindata cache=16.00MiB handles=16
+INFO [10-19|16:50:34.482] Writing custom genesis block
+INFO [10-19|16:50:34.485] Persisted trie from memory database      nodes=0 size=0.00B time=0s gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-19|16:50:34.494] Successfully wrote genesis state         database=lightchaindata hash=edb0d2…8fd420
+amolsr@DESKTOP-DO2TLJF:/mnt/c/Users/student/Desktop/amolsr/BlockChain$ /mnt/c/Users/student/Desktop/amolsr/Geth/geth.exe --datadir ~/.ethereum/net219102019 --networkid 219102019 console
+INFO [10-19|16:51:27.946] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-19|16:51:28.011] Starting peer-to-peer node               instance=Geth/v1.9.6-stable-bd059680/windows-amd64/go1.13
+INFO [10-19|16:51:28.016] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [10-19|16:51:28.018] Allocated cache and file handles         database=C:\\home\\amolsr\\.ethereum\\net219102019\\geth\\chaindata cache=512.00MiB handles=8192
+INFO [10-19|16:51:28.321] Opened ancient database                  database=C:\\home\\amolsr\\.ethereum\\net219102019\\geth\\chaindata\\ancient
+INFO [10-19|16:51:28.329] Initialised chain configuration          config="{ChainID: <nil> Homestead: <nil> DAO: <nil> DAOSupport: false EIP150: <nil> EIP155: <nil> EIP158: <nil> Byzantium: <nil> Constantinople: <nil> Petersburg: <nil> Istanbul: <nil> Engine: unknown}"
+INFO [10-19|16:51:28.336] Disk storage enabled for ethash caches   dir=C:\\home\\amolsr\\.ethereum\\net219102019\\geth\\ethash count=3
+INFO [10-19|16:51:28.341] Disk storage enabled for ethash DAGs     dir=C:\\Users\\student\\AppData\\Local\\Ethash count=2
+INFO [10-19|16:51:28.346] Initialising Ethereum protocol           versions=[63] network=219102019 dbversion=<nil>
+WARN [10-19|16:51:28.350] Upgrade blockchain database version      from=<nil> to=7
+INFO [10-19|16:51:28.406] Loaded most recent local header          number=0 hash=edb0d2…8fd420 td=1024 age=50y6mo1w
+INFO [10-19|16:51:28.412] Loaded most recent local full block      number=0 hash=edb0d2…8fd420 td=1024 age=50y6mo1w
+INFO [10-19|16:51:28.415] Loaded most recent local fast block      number=0 hash=edb0d2…8fd420 td=1024 age=50y6mo1w
+INFO [10-19|16:51:28.422] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [10-19|16:51:28.432] Allocated fast sync bloom                size=512.00MiB
+INFO [10-19|16:51:28.436] Initialized fast sync bloom              items=0 errorrate=0.000 elapsed=0s
+INFO [10-19|16:51:28.516] New local node record                    seq=1 id=1a405e2161a65976 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [10-19|16:51:28.524] Started P2P networking                   self=enode://a0e5ca239b4571b2910875f62ed26f533693c1800111d2a9de340b214ca423f04509924b51743c45897c1e69425fa04ec33fe949b6a0d2e35ca713705f2c3b31@127.0.0.1:30303
+INFO [10-19|16:51:28.525] IPC endpoint opened                      url=\\\\.\\pipe\\geth.ipc
+WARN [10-19|16:51:28.589] Served eth_coinbase                      reqid=3 t=0s err="etherbase must be explicitly specified"
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.9.6-stable-bd059680/windows-amd64/go1.13
+at block: 0 (Thu, 01 Jan 1970 05:30:00 IST)
+ datadir: C:\home\amolsr\.ethereum\net219102019
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> INFO [10-19|16:51:29.739] New local node record                    seq=2 id=1a405e2161a65976 ip=117.55.241.53 udp=30303 tcp=30303
+> personal.
+personal._requestManager  personal.getListWallets   personal.lockAccount      personal.signTransaction
+personal.constructor      personal.importRawKey     personal.newAccount       personal.unlockAccount
+personal.deriveAccount    personal.initializeWallet personal.openWallet       personal.unpair
+personal.ecRecover        personal.listAccounts     personal.sendTransaction
+personal.getListAccounts  personal.listWallets      personal.sign
+> personal.newAccount()
+Password:
+Repeat password:
+INFO [10-19|16:52:06.467] Your new key was generated               address=0x32149B26c63Be9e1B7628cC268ACF8DfEc17b161
+WARN [10-19|16:52:06.472] Please backup your key file!             path=C:\\home\\amolsr\\.ethereum\\net219102019\\keystore\\UTC--2019-10-19T11-22-05.184641700Z--32149b26c63be9e1b7628cc268acf8dfec17b161
+WARN [10-19|16:52:06.478] Please remember your password!
+"0x32149b26c63be9e1b7628cc268acf8dfec17b161"
+> miner.start()
+INFO [10-19|16:52:18.664] Updated mining threads                   threads=6
+INFO [10-19|16:52:18.666] Transaction pool price threshold updated price=1000000000
+INFO [10-19|16:52:18.670] Etherbase automatically configured       address=0x32149B26c63Be9e1B7628cC268ACF8DfEc17b161
+nullIN
+FO [10-19|16:52:18.678] Commit new mining work                   number=1 sealhash=93083d…52160b uncles=0 txs=0 > gas=0
+fees=0 elapsed=0s
+INFO [10-19|16:52:18.919] Successfully sealed new block            number=1 sealhash=93083d…52160b hash=8dfc72…653960 elapsed=240.323ms
+INFO [10-19|16:52:18.924] ??? mined potential block                   number=1 hash=8dfc72…65396
+INFO [10-19|16:52:18.965] Commit new mining work                   number=2 sealhash=cf8fbe…62b8e8 uncles=0 txs=0 gas=0
+fees=0 elapsed=40.890ms
+INFO [10-19|16:52:19.086] Successfully sealed new block            number=2 sealhash=cf8fbe…62b8e8 hash=f14143…891ab1 elapsed=162.565ms
+INFO [10-19|16:52:19.091] ??? mined potential block                  number=2 hash=f14143…891ab
+INFO [10-19|16:52:19.114] Commit new mining work                   number=3 sealhash=475488…2bb1b7 uncles=0 txs=0 gas=0
+fees=0 elapsed=22.939ms
+INFO [10-19|16:52:19.176] Successfully sealed new block            number=3 sealhash=475488…2bb1b7 hash=4ec7cd…09b67d elapsed=84.775ms
+INFO [10-19|16:52:19.181] ??? mined potential block                  number=3 hash=4ec7cd…09b67d
+INFO [10-19|16:52:19.181] Mining too far in the future             wait=2s
+INFO [10-19|16:52:21.188] Commit new mining work                   number=4 sealhash=210e7d…fe4424 uncles=0 txs=0 gas=0
+fees=0 elapsed=2.006s
+INFO [10-19|16:52:21.286] Successfully sealed new block            number=4 sealhash=210e7d…fe4424 hash=c93f89…20b172 elapsed=98.524ms
+INFO [10-19|16:52:21.293] ??? minedd potential block                  number=4 hash=c93f89…20b17
+INFO [10-19|16:52:21.312] Commit new mining work                   number=5 sealhash=80d900…5aa23d uncles=0 txs=0 gas=0
+fees=0 elapsed=18.949ms
+INFO [10-19|16:52:21.781] Successfully sealed new block            number=5 sealhash=80d900…5aa23d hash=f26011…bb9050 elapsed=487.695ms
+INFO [10-19|16:52:21.786] ??? mined potential block                  number=5 hash=f26011…bb9050
+INFO [10-19|16:52:21.786] Mining too far in the future             wait=2s
+> miINFO [10-19|16:52:23.792] Commit new mining work                   number=6 sealhash=00c903…d3c40d uncles=0 txs=0 ga> min0 fees=0 elapsed=2.006s
+INFO [10-19|16:52:23.912] Successfully sealed new block            number=6 sealhash=00c903…d3c40d hash=265b18…ebadf1 elapsed=119.397ms
+INFO [10-19|16:52:23.918] ??? mined potenntial block                  number=6 hash=265b18…ebadf
+INFO [10-19|16:52:23.933] Commit new mining work                   number=7 sealhash=ef2510…bf27d1 uncles=0 txs=0 gas=0
+fees=0 elapsed=14.929ms
+INFO [10-19|16:52:23.943] Successfully sealed new block            number=7 sealhash=ef2510…bf27d1 hash=fe621e…4cd5af elapsed=23.937ms
+INFO [10-19|16:52:23.950] ??? mined potential block                  number=7 hash=fe621e…4cd5af
+INFO [10-19|16:52:23.950] Mining too far in the future             wait=2s
+> miner.sINFO [10-19|16:52:25.957] Commit new mining work                   number=8 sealhash=e85505…f01b84 uncles=0 ts
+=0 gas=0 fees=0 elapsed=2.006s
+> miner.stNFO [10-19|16:52:26.105] Successfully sealed new block            number=8 sealhash=e85505…f01b84 hash=c88528…fc22f5 elapsed=147.610ms
+INFO [10-19|16:52:26.111] ??? block reached canonical chain           number=1 hash=8dfc72…65396
+INFO [10-19|16:52:26.128] ??? mined potential block                  number=8 hashh=c88528…fc22f
+INFO [10-19|16:52:26.159] Commit new mining work                   number=9 sealhash=df537d…d37b9e uncles=0 txs=0 gas=0
+fees=0 elapsed=47.872ms
+> miner.stopINFO [10-19|16:52:26.690] Successfully sealed new block            number=9 sealhash=df537d…d37b9e hash=c8e839…f40737 elapsed=578.453ms
+INFO [10-19|16:52:26.694] ??? block reached canonical chaiin          number=2 hash=f14143…891ab
+INFO [10-19|16:52:26.725] ??? mined potential block                   number=9 hash=c8e839…f4073
+INFO [10-19|16:52:26.734] Commit new mining work                   number=10 sealhash=ee5a0e…2c008c uncles=0 txs=0 gas=0 fees=0 elapsed=38.895ms
+INFO [10-19|16:52:26.757] Successfully sealed new block            number=10 sealhash=ee5a0e…2c008c hash=cf4289…19dd45 elapsed=61.835ms
+INFO [10-19|16:52:26.763] ??? block reached canonical chain          number=3  hash=4ec7cd…09b67d
+INFO [10-19|16:52:26.766] ??? mined potential block                  number=10 hash=cf4289…19dd4
+INFO [10-19|16:52:26.763] Mining too far in the future             wait=2s
+INFO [10-19|16:52:28.772] Commit new mining work                   number=11 sealhash=e6640c…aa2475 uncles=0 txs=0 gas=0 fees=0 elapsed=2.008s
+> miner.stop()
+null
