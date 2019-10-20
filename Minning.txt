@@ -75,31 +75,30 @@ INFO [10-19|16:52:21.293] ??? minedd potential block                  number=4 h
 INFO [10-19|16:52:21.312] Commit new mining work                   number=5 sealhash=80d900…5aa23d uncles=0 txs=0 gas=0
 fees=0 elapsed=18.949ms
 INFO [10-19|16:52:21.781] Successfully sealed new block            number=5 sealhash=80d900…5aa23d hash=f26011…bb9050 elapsed=487.695ms
-INFO [10-19|16:52:21.786] ??? mined potential block                  number=5 hash=f26011…bb9050
-INFO [10-19|16:52:21.786] Mining too far in the future             wait=2s
-> miINFO [10-19|16:52:23.792] Commit new mining work                   number=6 sealhash=00c903…d3c40d uncles=0 txs=0 ga> min0 fees=0 elapsed=2.006s
-INFO [10-19|16:52:23.912] Successfully sealed new block            number=6 sealhash=00c903…d3c40d hash=265b18…ebadf1 elapsed=119.397ms
-INFO [10-19|16:52:23.918] ??? mined potenntial block                  number=6 hash=265b18…ebadf
-INFO [10-19|16:52:23.933] Commit new mining work                   number=7 sealhash=ef2510…bf27d1 uncles=0 txs=0 gas=0
-fees=0 elapsed=14.929ms
-INFO [10-19|16:52:23.943] Successfully sealed new block            number=7 sealhash=ef2510…bf27d1 hash=fe621e…4cd5af elapsed=23.937ms
-INFO [10-19|16:52:23.950] ??? mined potential block                  number=7 hash=fe621e…4cd5af
-INFO [10-19|16:52:23.950] Mining too far in the future             wait=2s
-> miner.sINFO [10-19|16:52:25.957] Commit new mining work                   number=8 sealhash=e85505…f01b84 uncles=0 ts
-=0 gas=0 fees=0 elapsed=2.006s
-> miner.stNFO [10-19|16:52:26.105] Successfully sealed new block            number=8 sealhash=e85505…f01b84 hash=c88528…fc22f5 elapsed=147.610ms
-INFO [10-19|16:52:26.111] ??? block reached canonical chain           number=1 hash=8dfc72…65396
-INFO [10-19|16:52:26.128] ??? mined potential block                  number=8 hashh=c88528…fc22f
-INFO [10-19|16:52:26.159] Commit new mining work                   number=9 sealhash=df537d…d37b9e uncles=0 txs=0 gas=0
-fees=0 elapsed=47.872ms
-> miner.stopINFO [10-19|16:52:26.690] Successfully sealed new block            number=9 sealhash=df537d…d37b9e hash=c8e839…f40737 elapsed=578.453ms
-INFO [10-19|16:52:26.694] ??? block reached canonical chaiin          number=2 hash=f14143…891ab
-INFO [10-19|16:52:26.725] ??? mined potential block                   number=9 hash=c8e839…f4073
-INFO [10-19|16:52:26.734] Commit new mining work                   number=10 sealhash=ee5a0e…2c008c uncles=0 txs=0 gas=0 fees=0 elapsed=38.895ms
-INFO [10-19|16:52:26.757] Successfully sealed new block            number=10 sealhash=ee5a0e…2c008c hash=cf4289…19dd45 elapsed=61.835ms
-INFO [10-19|16:52:26.763] ??? block reached canonical chain          number=3  hash=4ec7cd…09b67d
-INFO [10-19|16:52:26.766] ??? mined potential block                  number=10 hash=cf4289…19dd4
-INFO [10-19|16:52:26.763] Mining too far in the future             wait=2s
-INFO [10-19|16:52:28.772] Commit new mining work                   number=11 sealhash=e6640c…aa2475 uncles=0 txs=0 gas=0 fees=0 elapsed=2.008s
-> miner.stop()
+amolsr@Mercy:/mnt/f/Projects/BlockChain$ ../../Install/Geth/geth.exe --datadir /.ethereum/net220102019 init genesis220102019.json 2>> Genesis.log
+amolsr@Mercy:/mnt/f/Projects/BlockChain$ ../../Install/Geth/geth.exe --datadir /.ethereum/net220102019 --networkid 220102019 console 2>>Eth.log
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.9.6-stable-bd059680/windows-amd64/go1.13
+at block: 0 (Thu, 01 Jan 1970 05:30:00 IST)
+ datadir: F:\.ethereum\net220102019
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+> personal.newAccount()
+
+!! Unsupported terminal, password will be echoed.
+Password: Amol@123
+
+Repeat password: Amol@123
+
+"0xccd7415c81b4a1a05eed8a326b856455a0818685"
+> miner.start()
+
 null
+> miner.stop()
+
+null
+> eth.getBalance("0xccd7415c81b4a1a05eed8a326b856455a0818685")
+
+175000000000000000000
+>

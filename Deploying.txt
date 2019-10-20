@@ -1,0 +1,7 @@
+personal.unlockAccount(eth.coinbase)
+var contract = eth.contract(<CONTENTS_OF_ABI_FILE>)
+var bytecode = '0x<CONTENTS_OF_BIN_FILE>'
+var deploy = {from:eth.coinbase, data:bytecode, gas: 2000000}
+var contractPartialInstance = contract.new("DISQUALIFIED!", deploy)
+var contractInstance = contract.at(contractPartialInstance.address)
+contractInstance.function()
