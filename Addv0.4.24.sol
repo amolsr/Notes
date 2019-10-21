@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity ^0.4.24;
 contract Add {
     uint public result;
 
@@ -6,8 +6,8 @@ contract Add {
     result = 0;
     }
 
-    function setResult(uint a, uint b) public {
-        result=a+b;
+    function setResult(uint num1, uint num2) public {
+        result=num1+num2;
     }
 
     function getAdd() public view returns (uint) {
