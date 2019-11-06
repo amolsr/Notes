@@ -4,5 +4,6 @@ var contractInstance = contract.at(<CONTRACT ADDRESS>)
 contractInstance.function(
 <PARAMETERS>,
 {
-from: eth.coinbase
+from: eth.coinbase,
+gas: 3000000
 });

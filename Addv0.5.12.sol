@@ -9,8 +9,4 @@ contract Add {
     function setResult(uint a, uint b) public {
         result=a+b;
     }
-
-    function getAdd() public view returns (uint) {
-        return result;
-    }
 }
