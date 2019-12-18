@@ -20,6 +20,9 @@ sudo apt-get install solc
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+// Install Remote VS Code
+sudo curl “https://raw.githubusercontent.com/aurora/rmate/master/rmate” -o /usr/local/bin/code && sudo chmod +x /usr/local/bin/rmate && sudo mv /usr/local/bin/rmate /usr/local/bin/code
+
 // Install tmux
 sudo apt-get install tmux
 
@@ -34,5 +37,24 @@ npm install -g ethereumjs-testrpc
 // Run testrpc
 testrpc
 
-// Install Remote VS Code
-sudo curl “https://raw.githubusercontent.com/aurora/rmate/master/rmate” -o /usr/local/bin/code && sudo chmod +x /usr/local/bin/rmate && sudo mv /usr/local/bin/rmate /usr/local/bin/code
+
+// Make a new folder
+// Create pacakge.json file
+{
+  "dependencies": {
+    "web3": "0.17.0-alpha"
+  }
+}
+
+// Install dependencies (need to be inside the same folder as package.json)
+npm install
+
+// Run node console (need to be inside the same folder as package.json)
+node
+
+// INSIDE NODE CONSOLE
+var Web3 = require("web3")
+var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+web3.eth.accounts
+
+// If web3.eth.accounts matches the accounts in your testrpc, you are good to go
