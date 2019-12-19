@@ -1,5 +1,9 @@
 // Running on Ubuntu 16.04 (64-bit)
 
+//command for permission edit in WSL ubuntu
+sudo umount /mnt/c
+sudo mount -t drvfs C: /mnt/c -o metadata
+
 // edit permissions on pem file
 chmod 400 {keyfile}.pem 
 
