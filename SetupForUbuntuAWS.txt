@@ -3,6 +3,13 @@
 //command for permission edit in WSL ubuntu
 sudo umount /mnt/c
 sudo mount -t drvfs C: /mnt/c -o metadata
+Or
+sudo vim /etc/wsl.conf
+paste
+[automount]
+enabled = true
+options = "metadata"
+mountFsTab = false
 
 // edit permissions on pem file
 chmod 400 {keyfile}.pem 
