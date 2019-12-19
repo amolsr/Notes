@@ -32,12 +32,15 @@ touch .tmux.conf
 > Add tmux configuration to .tmux.conf file
 > Highly recommend this short tmux book for reference https://pragprog.com/book/bhtmux/tmux
 
-// Install Ethereum testrpc
-npm install -g ethereumjs-testrpc
+// Install C Development Tools
+sudo apt-get install build-essential
 
-// Run testrpc
-testrpc
-
+// Install Ganache CLI
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+export PATH=~/.npm-global/bin:$PATH
+source ~/.profile
+npm install -g ganache-cli
 
 // Make a new folder
 // Create pacakge.json file
