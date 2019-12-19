@@ -21,7 +21,8 @@ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 // Install Remote VS Code
-sudo curl “https://raw.githubusercontent.com/aurora/rmate/master/rmate” -o /usr/local/bin/code && sudo chmod +x /usr/local/bin/rmate && sudo mv /usr/local/bin/rmate /usr/local/bin/code
+sudo wget -O /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate && 
+sudo chmod a+x /usr/local/bin/rmate && sudo mv /usr/local/bin/rmate /usr/local/bin/code
 
 // Install tmux
 sudo apt-get install tmux
