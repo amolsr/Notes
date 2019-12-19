@@ -35,12 +35,13 @@ touch .tmux.conf
 // Install C Development Tools
 sudo apt-get install build-essential
 
-// Install Ganache CLI
+// Install Ganache CLI & truffle
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
 export PATH=~/.npm-global/bin:$PATH
 source ~/.profile
 npm install -g ganache-cli
+npm install -g truffle
 
 // Make a new folder
 // Create pacakge.json file
