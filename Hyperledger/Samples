@@ -1,2 +1,6 @@
 sudo curl -sSL https://goo.gl/6wtTN5 | sudo bash -s 1.1.0
 sudo chmod 777 -R fabric-samples
+cd fabric-samples/first-network
+sudo ./byfn.sh generate
+sudo ./byfn.sh up
+sudo ./byfn.sh down
