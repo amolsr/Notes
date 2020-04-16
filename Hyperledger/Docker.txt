@@ -37,6 +37,6 @@ echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc
 sudo nano /etc/wsl.conf
 
 # Now make it look like this and save the file when you're done:
-# [automount]
-# root = /
-# options = "metadata"
+[automount]
+root = /
+options = "metadata"
