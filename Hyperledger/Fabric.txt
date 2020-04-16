@@ -17,6 +17,6 @@ sudo apt-get upgrade
 curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.6 1.4.6 0.4.18
 sudo chmod 777 -R fabric-samples
 cd fabric-samples/first-network
-sudo ./byfn.sh generate
-sudo ./byfn.sh up
-sudo ./byfn.sh down
+./byfn.sh generate
+./byfn.sh up
+./byfn.sh down
