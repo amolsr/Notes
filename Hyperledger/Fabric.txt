@@ -1,5 +1,5 @@
 sudo apt-get install curl
-sudo apt-get install golang-go
+sudo apt install golang-go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 sudo apt-get install nodejs
