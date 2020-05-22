@@ -9,4 +9,4 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
  docker-compose -f docker-compose-node2.yml up -d <br />
  docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel create -o orderer.example.com:7050 -c channel12 -f /var/hyperledger/configs/channel.tx <br />
  docker cp peer0.org1.example.com:channel12.block . <br />
- 
+ docker exec -it peer0.org1.example.com ls <br />
