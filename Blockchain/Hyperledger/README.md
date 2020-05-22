@@ -10,3 +10,5 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
  docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@org1.example.com/msp" peer0.org1.example.com peer channel create -o orderer.example.com:7050 -c channel12 -f /var/hyperledger/configs/channel.tx <br />
  docker cp peer0.org1.example.com:channel12.block . <br />
  docker exec -it peer0.org1.example.com ls <br />
+ docker cp channel12.block peer0.org2.example.com:/channel12.block <br />
+ docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@org2.example.com/msp" peer0.org2.example.com peer channel join -b channel12.block <br />
