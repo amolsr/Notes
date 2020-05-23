@@ -14,7 +14,7 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
  docker exec -e "CORE_PEER_MSPCONFIGPATH=/var/hyperledger/users/Admin@org2.example.com/msp" peer0.org2.example.com peer channel join -b channel12.block <br />
  docker exec -it cli peer chaincode install -n mycc -p github.com/chaincode/ATA -v v0 <br />
  docker exec -it cli peer chaincode instantiate -o orderer.example.com:7050 -C channel12 -n mycc github.com/chaincode/ATA -v v0 -c 
-'{"Args": []}' -P "OR('Org1MSP.client', 'Org2MSP.client')" <br />
+'{"Args": []}' -P "OR('Org1MSP.member', 'Org2MSP.member')" <br />
  docker exec -it cli peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["assign","abcd","Org2MSP"]}' <br />
  docker exec -it cli peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}' <br />
   docker exec -it cli peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["transfer","abcd","Org1MSP"]}' <br />
