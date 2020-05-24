@@ -40,8 +40,7 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
 ### Instantiate Chaincode
 
 ```
- docker exec -it cli peer chaincode instantiate -o orderer.example.com:7050 -C channel12 -n mycc github.com/chaincode/ATA -v v0 -c 
-'{"Args": []}' -P "OR('Org1MSP.member', 'Org2MSP.member')" 
+ docker exec -it cli peer chaincode instantiate -o orderer.example.com:7050 -C channel12 -n mycc github.com/chaincode/ATA -v v0 -c '{"Args": []}' -P "OR('Org1MSP.member', 'Org2MSP.member')" 
 ```
 
 ### Testing Purpose
