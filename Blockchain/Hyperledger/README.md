@@ -5,6 +5,13 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
  ../bin/cryptogen generate --config=./crypto-config.yaml 
  ../bin/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block 
  ../bin/configtxgen -profile Channel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID channel12 
+ 
+ ```
+ 
+### Inspecting a Certificate
+
+```
+ openssl x509 -noout -text -in crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
  ```
  
 ### Compose Docker Images
