@@ -60,3 +60,10 @@ docker exec -it cli-org1 peer chaincode invoke -o orderer.example.com:7050 -C ch
 docker exec -it cli-org1 peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}'
 docker exec -it cli-org2 peer chaincode query -C channel12 -n mycc -c '{"Args":["read","admin"]}'
   ```
+  
+  
+   // only Admin can set value
+ x509, _ := cid.GetX509Certificate(stub)
+ if x509.Subject.CommonName != "Admin@org1.example.com" {
+  return "", fmt.Errorf("Only Admin can set new value.")
+ }
