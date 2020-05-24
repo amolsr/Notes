@@ -47,8 +47,9 @@ https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperle
 ### Testing Purpose
 
 ```
-docker exec -it cli peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["assign","abcd","Org2MSP"]}'
-docker exec -it cli peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}' 
-docker exec -it cli peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["transfer","abcd","Org1MSP"]}' 
-docker exec -it cli peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}'
+docker exec -it cli-org1 peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["assign","abcd","Org2MSP"]}'
+docker exec -it cli-org1 peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}' 
+docker exec -it cli-org1 peer chaincode invoke -o orderer.example.com:7050 -C channel12 -n mycc -c '{"Args":["transfer","abcd","Org1MSP"]}' 
+docker exec -it cli-org1 peer chaincode query -C channel12 -n mycc -c '{"Args":["read","abcd"]}'
+docker exec -it cli-org2 peer chaincode query -C channel12 -n mycc -c '{"Args":["read","admin"]}'
   ```
