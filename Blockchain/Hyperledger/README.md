@@ -1,4 +1,13 @@
+### Setup For 3 Nodes two Channels 
 https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperledger-fabric-54ba8a9c461f
+
+### Adding a Node to network
+https://medium.com/@kctheservant/add-a-new-organization-on-existing-hyperledger-fabric-network-2c9e303955b2
+
+### Removing a Node from network
+https://medium.com/@kctheservant/remove-an-organization-from-a-running-fabric-network-55f52cd0a012
+
+
 ### Create Cryptological Artifacts
 
 ```
