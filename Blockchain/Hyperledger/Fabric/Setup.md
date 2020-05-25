@@ -1,3 +1,4 @@
+```
 sudo apt-get install curl
 sudo apt install golang-go
 export GOPATH=$HOME/go
@@ -18,3 +19,4 @@ cd fabric-samples/first-network
 ./byfn.sh generate
 ./byfn.sh up
 ./byfn.sh down
+```
