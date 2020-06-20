@@ -1,1 +1,3 @@
 mongoexport --uri "mongodb+srv://abhiman:herohere@cluster0-8s4cf.mongodb.net/registration?retryWrites=true&w=majority" --collection students --type=csv --out text.csv --fields "role,full_name,student_no,roll_no,course,branch,email,mobile,father_name,year,semester"
+
+mongoimport --uri "mongodb+srv://abhiman:herohere@cluster0-8s4cf.mongodb.net/registration?retryWrites=true&w=majority" --collection students --type=csv --file text.csv --headerline
