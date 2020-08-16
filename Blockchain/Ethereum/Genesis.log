@@ -1,0 +1,9 @@
+INFO [10-20|22:39:03.451] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [10-20|22:39:03.495] Allocated cache and file handles         database=F:\\.ethereum\\net220102019\\geth\\chaindata cache=16.00MiB handles=16
+INFO [10-20|22:39:03.670] Writing custom genesis block 
+INFO [10-20|22:39:03.670] Persisted trie from memory database      nodes=0 size=0.00B time=0s gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-20|22:39:03.673] Successfully wrote genesis state         database=chaindata hash=4bf488…debe89
+INFO [10-20|22:39:03.673] Allocated cache and file handles         database=F:\\.ethereum\\net220102019\\geth\\lightchaindata cache=16.00MiB handles=16
+INFO [10-20|22:39:03.747] Writing custom genesis block 
+INFO [10-20|22:39:03.747] Persisted trie from memory database      nodes=0 size=0.00B time=0s gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [10-20|22:39:03.749] Successfully wrote genesis state         database=lightchaindata hash=4bf488…debe89

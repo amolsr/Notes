@@ -1,0 +1,175 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Result",
+            "request": "launch",
+            "mainClass": "Result",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Something",
+            "request": "launch",
+            "mainClass": "Something",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RotateArray",
+            "request": "launch",
+            "mainClass": "Hackerrank.RotateArray",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestClass",
+            "request": "launch",
+            "mainClass": "TestClass",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - example",
+            "request": "launch",
+            "mainClass": "example",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Quick",
+            "request": "launch",
+            "mainClass": "Sorting.Quick",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GaneshPattern<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.GaneshPattern",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GoodSubset<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.GoodSubset",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HcfNLcm<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.HcfNLcm",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-IncredibleHulk<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.IncredibleHulk",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PiyushNMagicalPark<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.PiyushNMagicalPark",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrimeVisit<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.PrimeVisit",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RotatedImage<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.RotatedImage",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SortTheString<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.SortTheString",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SortedArray<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.SortedArray",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TrailingZero<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "HackerBlocks.TrailingZero",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Permutation<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "Permutation",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Bubble<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "Sorting.Bubble",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Insertion<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "Sorting.Insertion",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Merge<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "Sorting.Merge",
+            "projectName": "Competitive_58113194"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Selection<Competitive_58113194>",
+            "request": "launch",
+            "mainClass": "Sorting.Selection",
+            "projectName": "Competitive_58113194"
+        }
+    ]
+}

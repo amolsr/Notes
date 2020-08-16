@@ -1,1 +1,0 @@
-##LevelDB is Database build by Google in 2011 and was open sourced and is used by ethereum to store local data
