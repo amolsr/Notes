@@ -15,7 +15,7 @@ public class PowerSet {
 		}
 	}
  
-	public List<List<Integer>> getSubsets(int[] input) {
+	public static List<List<Integer>> getSubsets(int[] input) {
 		List<List<Integer>> list = new ArrayList<>();
 		subsetHelper(list, new ArrayList<>(), input, 0);
 		return list;
