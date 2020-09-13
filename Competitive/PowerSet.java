@@ -7,30 +7,26 @@ public class PowerSet {
  
 	public static void main(String[] args) {
  
-		SubsetsOfSetJava soa= new SubsetsOfSetJava();
-		int[] nums= {1, 2, 1};
-		List<List<Integer>> subsets = soa.subsets(nums);
+		int[] input= {1, 2, 1};
+		List<List<Integer>> subsets = getSubsets(input);
  
 		for (List<Integer> subset: subsets) {
 			System.out.println(subset);
 		}
 	}
  
-	public List<List<Integer>> subsets(int[] nums) {
+	public List<List<Integer>> getSubsets(int[] input) {
 		List<List<Integer>> list = new ArrayList<>();
-		subsetsHelper(list, new ArrayList<>(), nums, 0);
+		subsetHelper(list, new ArrayList<>(), input, 0);
 		return list;
 	}
  
-	private void subsetsHelper(List<List<Integer>> list , List<Integer> resultList, int [] nums, int start){
-		list.add(new ArrayList<>(resultList));
-		for(int i = start; i < nums.length; i++){
-           // add element
-			resultList.add(nums[i]);
-           // Explore
-			subsetsHelper(list, resultList, nums, i + 1);
-           // remove
-			resultList.remove(resultList.size() - 1);
+	private static void subsetHelper(List<List<Integer>> list , List<Integer> result, int [] input, int start){
+		list.add(new ArrayList<>(result));
+		for(int i = start; i < input.length; i++){
+	        result.add(input[i]);
+		subsetHelper(list, result, input, i + 1);
+		result.remove(result.size() - 1);
 		}
 	}
  
