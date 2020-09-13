@@ -5,7 +5,8 @@ import java.util.List;
 public class Permutation {
 
     public static List<String> getPermutations(String input) {
-
+        // build in method 
+        // Collections.shuffle(Arrays.asList(elements));
         List<String> strList = new ArrayList<String>();
         permutations("", input, strList);
         return strList;
