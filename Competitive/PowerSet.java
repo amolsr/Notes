@@ -1,28 +1,25 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class PowerSet {
 
 	public static void main(String[] args) {
 
-		PowerSet soa = new PowerSet();
-		int[] nums = { 1, 2, 1 };
-		List<List<Integer>> subsets = soa.subsets(nums);
+		int[] input = { 1, 2, 1 };
+		List<List<Integer>> subsets = getSubsets(input);
 
 		for (List<Integer> subset : subsets) {
 			System.out.println(subset);
 		}
 	}
 
-	public List<List<Integer>> subsets(int[] nums) {
+	public static List<List<Integer>> getSubsets(int[] input) {
 		List<List<Integer>> list = new ArrayList<>();
-		subsetsHelper(list, new ArrayList<>(), nums, 0);
+		subsetsHelper(list, new ArrayList<>(), input, 0);
 		return list;
 	}
 
-	private void subsetsHelper(List<List<Integer>> list, List<Integer> resultList, int[] nums, int start) {
+	private static void subsetsHelper(List<List<Integer>> list, List<Integer> resultList, int[] nums, int start) {
 		list.add(new ArrayList<>(resultList));
 		for (int i = start; i < nums.length; i++) {
 			// add element
