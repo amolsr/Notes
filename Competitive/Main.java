@@ -9,6 +9,7 @@ public class Main {
         String[] parted = input.split(" ");
         Integer n1 = Integer.parseInt(parted[0]);
         Integer n2 = Integer.parseInt(parted[1]);
+        s.close();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmmss");
         int count = 0;
         for (int i = n1; i <= n2; i++) {
@@ -35,7 +36,7 @@ public class Main {
                         }
                         String str = Hours + Minutes + Second;
                         try {
-                            LocalTime time = LocalTime.parse(str, formatter);
+                            LocalTime.parse(str, formatter);
                             String kml = String.valueOf(i) + str;
                             if (isPalindrome(kml)) {
                                 count++;

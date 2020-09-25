@@ -50,5 +50,6 @@ public class DFS {
             root = insert(root, data);
         }
         levelOrder(root);
+        sc.close();
     }
 }

@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class CodeVitaQuestion {
 
@@ -12,6 +11,7 @@ public class CodeVitaQuestion {
 
         int n1 = scanner.nextInt();
         int n2 = scanner.nextInt();
+        scanner.close();
 
         arrayListOne.add(n1);
         arrayListOne = updatingList(arrayListOne, n1);

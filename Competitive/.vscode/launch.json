@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Permutation",
+            "request": "launch",
+            "mainClass": "Permutation",
+            "projectName": "Competitive_ec295366"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Competitive_ec295366"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SortingAsPerValue",
+            "request": "launch",
+            "mainClass": "SortingAsPerValue",
+            "projectName": "Competitive_ec295366"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ideone",
+            "request": "launch",
+            "mainClass": "Ideone",
+            "projectName": "Competitive_ec295366"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Result",
             "request": "launch",
             "mainClass": "Result",

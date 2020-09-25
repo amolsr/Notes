@@ -9,10 +9,10 @@ public class Quick {
         }
     }
 
-    public static int partition(Integer[] n, Integer s, Integer e) {
-        int pivot = n[e];
-        int i = (s - 1);
-        for (int j = s; j < e; j++) {
+    public static int partition(Integer[] n, Integer start, Integer end) {
+        int pivot = n[end];
+        int i = (start - 1);
+        for (int j = start; j < end; j++) {
             if (n[j] < pivot) {
                 i++;
                 int temp = n[i];
@@ -21,17 +21,17 @@ public class Quick {
             }
         }
         int temp = n[i + 1];
-        n[i + 1] = n[e];
-        n[e] = temp;
+        n[i + 1] = n[end];
+        n[end] = temp;
 
         return i + 1;
     }
 
-    public static void quickSort(Integer[] n, Integer s, Integer e) {
-        if (s <= e) {
-            int i = partition(n, s, e);
-            quickSort(n, s, i - 1);
-            quickSort(n, i + 1, e);
+    public static void quickSort(Integer[] n, Integer start, Integer end) {
+        if (start <= end) {
+            int i = partition(n, start, end);
+            quickSort(n, start, i - 1);
+            quickSort(n, i + 1, end);
         }
     }
 }

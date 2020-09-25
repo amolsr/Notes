@@ -1,7 +1,6 @@
 package Tree;
 
 import java.util.*;
-import java.io.*;
 
 class Node {
     Node left, right;
@@ -15,7 +14,7 @@ class Node {
 
 public class BFS {
     static void levelOrder(Node root) {
-        Queue<Node> queue = new LinkedList();
+        Queue<Node> queue = new LinkedList<Node>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
@@ -52,6 +51,7 @@ public class BFS {
             int data = sc.nextInt();
             root = insert(root, data);
         }
+        sc.close();
         levelOrder(root);
     }
 }
