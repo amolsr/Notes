@@ -1,36 +1,45 @@
 import java.util.*;
+import java.util.stream.*;
 
-public class Solution {
+class Codechef {
+    public static void main(String[] args) throws java.lang.Exception {
+        Scanner s = new Scanner(System.in);
+        try {
+            Integer test = s.nextInt();
+            for (int i = 0; i < test; i++) {
+                int n = s.nextInt();
+                int[] a = IntStream.range(1, n).toArray();
+                List<Integer> arr = Arrays.stream(a).boxed().collect(Collectors.toList());
+                List<List<Integer>> perm = listPermutations(arr);
+            }
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            return;
+        }
+    }
 
-    // private static final Scanner scanner = new Scanner(System.in);
+    public static List<List<Integer>> listPermutations(List<Integer> list) {
 
-    public static void main(String[] args) {
-        // int t = scanner.nextInt();
-        // scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        if (list.size() == 0) {
+            List<List<Integer>> result = new ArrayList<List<Integer>>();
+            result.add(new ArrayList<Integer>());
+            return result;
+        }
 
-        // for (int tItr = 0; tItr < t; tItr++) {
-        // String[] nk = scanner.nextLine().split(" ");
+        List<List<Integer>> returnMe = new ArrayList<List<Integer>>();
 
-        // Long n = Long.parseLong(nk[0]);
-        // Long k = Long.parseLong(nk[1]);
-        // Long smallestInRange = 0l;
-        // main: for (int i = 0; i < n; i++) {
-        // for (int j = 0; j < n; j++) {
-        // if (i != j && (i & j) < k && (i & j) > smallestInRange) {
-        // smallestInRange = Long.parseLong(String.valueOf(i & j));
-        // if ((smallestInRange - k) == 1) {
-        // break main;
-        // }
-        // }
-        // }
-        // }
-        // // for(Integer[] p: a){
-        // // System.out.println(Arrays.toString(p));
-        // // }
-        // System.out.println(smallestInRange);
-        // }
-        List<Integer> li = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        // scanner.close();
-        System.out.print(li);
+        Integer firstElement = list.remove(0);
+
+        List<List<Integer>> recursiveReturn = listPermutations(list);
+        for (List<Integer> li : recursiveReturn) {
+
+            for (int index = 0; index <= li.size(); index++) {
+                List<Integer> temp = new ArrayList<Integer>(li);
+                temp.add(index, firstElement);
+                returnMe.add(temp);
+            }
+
+        }
+        return returnMe;
     }
 }

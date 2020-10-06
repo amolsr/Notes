@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PermutationAndCombination",
+            "request": "launch",
+            "mainClass": "PermutationAndCombination",
+            "projectName": "Competitive_ec295366"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Permutation",
             "request": "launch",
             "mainClass": "Permutation",

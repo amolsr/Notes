@@ -2,15 +2,15 @@ package Tree;
 
 import java.util.*;
 
-class Node {
-    Node left, right;
-    int data;
+// class Node {
+//     Node left, right;
+//     int data;
 
-    Node(int data) {
-        this.data = data;
-        left = right = null;
-    }
-}
+//     Node(int data) {
+//         this.data = data;
+//         left = right = null;
+//     }
+// }
 
 public class BFS {
     static void levelOrder(Node root) {
