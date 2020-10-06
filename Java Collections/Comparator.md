@@ -5,12 +5,12 @@ _It is present in java.util package. It contains two methods compare() and equal
 
 ````
 public int compare(Object obj1, Object obj2)
-returns negative iff obj1 has to come before obj2
-returns positive iff obj1 has to come after obj2
-reutrns zero if both are equal.
 ```
-
+- returns negative iff obj1 has to come before obj2
+- returns positive iff obj1 has to come after obj2
+- returns zero if both are equal.
 ```
 public boolean equals()
-It is optionable to implement as if already implemented in java.lang.Object class.
 ````
+
+- It is optionable to implement as if already implemented in java.lang.Object class.
