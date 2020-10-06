@@ -5,7 +5,7 @@ Cursors are only interface hence enumeration, iterator, and listiterator doesnt 
 ## Enumeration
 
 > Enumeration e = v.elements();
-> \\v is vector
+> _v is vector_
 
 - boolean hasMoreElements();
 - Object nextElement();
@@ -17,7 +17,7 @@ Universal cursor. Read and remove is possible.
 collection interface contains public Iterator iterator();
 
 > Iterator itr = c.iterator;
-> \\c is any Collection Object
+> _c is any Collection Object_
 
 - boolean hasNext();
 - Object next();
@@ -34,7 +34,7 @@ Its a bidirectional cursor. Read, Remove, Replacement, and addition of new objec
 public ListIterator listIterator() in List interface. It is child interface of ListIterator.
 
 > ListIterator ltr = l.listIterator();
-> \\l is any list object
+> _l is any list object_
 
 - public boolean hasNext();
 - public Object next();
