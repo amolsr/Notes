@@ -16,6 +16,10 @@
 #### Fill as per a condition.
 
        Arrays.setAll(arr, p -> p > 10 ? -1 : p);
+       
+#### Generating Array of 1 to N
+
+       int[] arr = IntStream.range(1, n).toArray()
 
 #### Copying as per the index in array from another array.
 
