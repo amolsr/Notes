@@ -28,3 +28,8 @@
 #### Printing Array
 
        Arrays.toString(arr);
+
+#### Printing 2-D Array
+
+       Arrays.deepToString(arr);
+
