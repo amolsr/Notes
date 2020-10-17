@@ -7,6 +7,7 @@
 
 #### Print an list
 
+       list.forEach(e->System.out.print(e));
        list.forEach(System.out::print);
 
 #### Fill 0-3 in array arr.
