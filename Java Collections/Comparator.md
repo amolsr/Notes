@@ -12,3 +12,28 @@ _It is present in java.util package. It contains two methods compare() and equal
 `public boolean equals()`
 
 - It is optionable to implement as if already implemented in java.lang.Object class.
+
+Example->
+```
+class Job 
+{ 
+    int start, finish, profit; 
+  
+    // Constructor 
+    Job(int start, int finish, int profit) 
+    { 
+        this.start = start; 
+        this.finish = finish; 
+        this.profit = profit; 
+    } 
+} 
+  
+// Used to sort job according to finish times 
+class JobComparator implements Comparator<Job> 
+{ 
+    public int compare(Job a, Job b) 
+    { 
+        return a.finish < b.finish ? -1 : a.finish == b.finish ? 0 : 1; 
+    } 
+}
+```
