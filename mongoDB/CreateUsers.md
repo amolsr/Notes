@@ -26,4 +26,5 @@ db.grantRolesToUser( "dba",  [ { db: "playground", role: "dbOwner"  } ] )
 ```
 Show role privileges:
 ```
-db.runCommand( { rolesInfo: { role: "dbOwner", db: "playground" }, showPrivileges: true} )```
+db.runCommand( { rolesInfo: { role: "dbOwner", db: "playground" }, showPrivileges: true} )
+```
