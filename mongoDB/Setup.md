@@ -11,9 +11,11 @@ systemLog:
 replication:
   replSetName: "M103"
 net:
-  bindIp: "127.0.0.1,192.168.103.100"
+  bindIp: "localhost,127.0.0.1,192.168.103.100"
+  port: 27000
 security:
   keyFile: "/data/keyfile"
+  authorization: enabled
 processManagement:
   fork: true
 ```
@@ -24,11 +26,11 @@ run on port 27000
 authentication is enabled
 When your config file is complete, launch mongod with the --config command line option:
 ```
-mongod --config mongod.conf --port 27000 --auth
+mongod --config mongod.conf 
 ```
 or using the -f option:
 ```
-mongod -f mongod.conf --port 27000 --auth
+mongod -f mongod.conf 
 ```
 Once mongod is running, open a new Terminal window and use the following command to create an admin user. You will need to create this user in order to validate your work.
 
