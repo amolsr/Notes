@@ -15,9 +15,9 @@ obj1.compareTo(Obj2); (obj1 with we are trying to insert and obj2 is element alr
 
 ### Constructors
 
-    -TreeSet t = new TreeSet(); (Elements is inserted into with default sorting order)
-    -TreeSet t = new TreeSet(Comparator c); (Elements are inserted as per specified comparator
-    -TreeSet t = new TreeSet(Collection c);
-    -TreeSet t = new TreeSet(SortedSet s);
+    - TreeSet t = new TreeSet(); (Elements is inserted into with default sorting order)
+    - TreeSet t = new TreeSet(Comparator c); (Elements are inserted as per specified comparator
+    - TreeSet t = new TreeSet(Collection c);
+    - TreeSet t = new TreeSet(SortedSet s);
 
 ### Methods for TreeSet
