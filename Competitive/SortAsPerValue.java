@@ -7,12 +7,9 @@ public class SortAsPerValue {
     public static void main(String[] args) {
         int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        TreeSet<Map.Entry<String, Integer>> set = new TreeSet<>(new Comparator<Map.Entry<String, Integer>>() {
-            @Override
-            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
-                return o1.getValue() - o2.getValue();
-            }
-        });
+        Set<Map.Entry<String,Integer>> set = new TreeSet<>((o1,o2)->{
+			return o1.getValue() - o2.getValue();
+		});
         for (int i = 0; i < N; i++) {
             String[] str = scanner.nextLine().split(" ");
 
