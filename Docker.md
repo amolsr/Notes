@@ -11,14 +11,14 @@
 
 2. Wait for it download
 
-3. Run the container using command : docker run --name postgresContainer -e POSTGRES_PASSWORD=123 -d -p 5432:5432 postgres
+3. Run the container using command : ```docker run --name postgresContainer -e POSTGRES_PASSWORD=123 -d -p 5432:5432 postgres```
 
-4. Verify if the container is running using command : docker ps
+4. Verify if the container is running using command : ```docker ps```
 
-5. You can execute psql commands using command : docker exec -it ContainerID psql -U postgres
+5. You can execute psql commands using command : ```docker exec -it ContainerID psql -U postgres```
 
 Where ContainerID is the ID you obtain from docker ps command
 
-6. Once psql opens, use this command to create a test database : create DATABASE test_db;
+6. Once psql opens, use this command to create a test database : ```create DATABASE test_db;```
 
 7. More docker resources : https://hub.docker.com/_/postgres/
