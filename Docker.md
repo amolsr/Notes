@@ -15,7 +15,7 @@
 
 4. Verify if the container is running using command : ```docker ps```
 
-5. You can execute psql commands using command : ```docker exec -it ContainerID psql -U postgres```
+5. You can execute psql commands using command : ```docker exec -it postgresContainer psql -U postgres```
 
 Where ContainerID is the ID you obtain from docker ps command
 
@@ -34,7 +34,7 @@ Where ContainerID is the ID you obtain from docker ps command
 
 4. Verify if the container is running using command : ```docker ps```
 
-5. You can execute psql commands using command : ```docker exec -it ContainerID mysql --user=root --password```
+5. You can execute psql commands using command : ```docker exec -it mysqlContainer mysql --user=root --password```
 
 Where ContainerID is the ID you obtain from docker ps command
 
