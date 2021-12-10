@@ -74,6 +74,12 @@ kfctl apply -V -f ${CONFIG_FILE}
 ```
 kubectl -n kubeflow get all
 ```
+## Open Dashboard
+```
+kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
+```
+In your Cloud9 environment, click Tools / Preview / Preview Running Application 
+
 ## Deleting cluster 
 ```
 eksctl delete cluster amol-eks-cluster
