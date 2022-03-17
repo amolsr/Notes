@@ -7,9 +7,7 @@ public class Insertion {
             int element = n[i];
             int j = i - 1;
             while (j >= 0 && n[j] > element) {
-                if (element < n[j]) {
-                    n[j + 1] = n[j];
-                }
+                n[j + 1] = n[j];
                 j--;
             }
             n[j + 1] = element;
