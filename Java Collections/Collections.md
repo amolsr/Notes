@@ -1,81 +1,63 @@
 # Collections Class
 
-##### boolean addAll(Collection c, T... elements)
+### Methods
 
-        Add all the element to a collection like - Collections.addAll(fruits, "Apples", "Oranges", "Banana");
+- `boolean addAll(Collection c, T... elements)`  
+  Add all the elements to a collection, e.g., `Collections.addAll(fruits, "Apples", "Oranges", "Banana")`.
 
-##### void sort(List list)
+- `void sort(List list)`  
+  Sorts the specified List into ascending order, according to the natural ordering of its elements.
 
-    Sorts the specified List into ascending order, according to the natural ordering of its elements.
+- `int frequency(Collection c, Object o)`  
+  Returns the frequency of an object in a collection of objects.
 
-##### int frequency(Collection c, Object o)
+- `void shuffle(List list)`  
+  Randomly permutes the specified list using a default source of randomness.
 
-        Returns the frequency of object in a collection of objects
+- `int binarySearch(List list, Object key)`  
+  Searches the specified List for the specified Object using the binary search algorithm.
 
-##### void shuffle(List list)
+- `void copy(List dest, List src)`  
+  Copies all of the elements from one List into another.
 
-    Randomly permutes the specified list using a default source of randomness.
+- `void fill(List list, Object o)`  
+  Replaces all of the elements of the specified List with the specified element.
 
-##### int binarySearch(List list, Object key)
+- `Object max(Collection coll)`  
+  Returns the maximum element of the given Collection, according to the natural ordering of its elements.
 
-    Searches the specified List for the specified Object using the binary search algorithm.
+- `Object min(Collection coll)`  
+  Returns the minimum element of the given Collection, according to the natural ordering of its elements.
 
-##### void copy(List dest, List src)
+- `List nCopies(int n, Object o)`  
+  Returns an immutable List consisting of `n` copies of the specified Object.
 
-    Copies all of the elements from one List into another.
+- `void reverse(List l)`  
+  Reverses the order of the elements in the specified List.
 
-##### void fill(List list, Object o)
+- `Queue asLifoQueue(Deque deque)`  
+  Returns a view of Deque as a Last-in-first-out (LIFO) Queue.
 
-    Replaces all of the elements of the specified List with the specified element.
+- `Comparator reverseOrder()`  
+  Returns a Comparator that imposes the reverse of the natural ordering on a collection of Comparable objects.
 
-##### Object max(Collection coll)
+- `boolean disjoint(Collection c1, Collection c2)`  
+  Returns true if the two specified collections have no elements in common.
 
-    Returns the maximum element of the given Collection, according to the natural ordering of its elements.
+- `Collection checkedCollection(Collection c, Class type)`  
+  Provides a dynamically typesafe view of the provided collection, e.g., `Collection checkedList = Collections.checkedCollection(list, String.class)`.
 
-##### Object min(Collection coll)
+- `int indexOfSubList(List source, List target)`  
+  Returns the starting position of the first occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence.
 
-    Returns the minimum element of the given Collection, according to the natural ordering of its elements.
+- `void sort(List list, Comparator c)`  
+  Sorts the specified List according to the order induced by the specified Comparator.
 
-##### List nCopies(int n, Object o)
+- `int binarySearch(List list, Object key, Comparator c)`  
+  Searches the specified List for the specified Object using the binary search algorithm.
 
-    Returns an immutable List consisting of n copies of the specified Object.
+- `Object max(Collection coll, Comparator comp)`  
+  Returns the maximum element of the given Collection, according to the order induced by the specified Comparator.
 
-##### void reverse(List l)
-
-    Reverses the order of the elements in the specified List.
-
-##### Queue asLifoQueue(Deque deque)
-
-        Returns a view of Deque as a Last-in-first-out (Lifo) Queue
-
-##### Comparator reverseOrder()
-
-    Returns a Comparator that imposes the reverse of the natural ordering on a collection of Comparable objects.
-
-##### boolean disjoint(Collection c1, Collection c2)
-
-        Returns true if the two specified collections have no elements in common.
-
-##### Collection checkedCollection(Collection c, Class type)
-
-        Provides a dynamically typesafe view of the provided collection. like - Collection checkedList = Collections.checkedCollection(list, String.class);
-
-##### int indexOfSubList(List source, List target)
-
-        Returns the starting position of the first occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence.
-
-##### void sort(List list, Comparator c)
-
-    Sorts the specified List according to the order induced by the specified Comparator.
-
-##### int binarySearch(List list, Object key, Comparator c)
-
-    Searches the specified List for the specified Object using the binary search algorithm.
-
-##### Object max(Collection coll, Comparator comp)
-
-    Returns the maximum element of the given Collection, according to the order induced by the specified Comparator.
-
-##### Object min(Collection coll, Comparator comp)
-
-    Returns the minimum element of the given Collection, according to the order induced by the specified Comparator.
+- `Object min(Collection coll, Comparator comp)`  
+  Returns the minimum element of the given Collection, according to the order induced by the specified Comparator.

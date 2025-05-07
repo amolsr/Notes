@@ -1,85 +1,84 @@
 # Data Types
+
 ## Int
 ## Float
-2727.0
--9.7
+2727.0  
+-9.7  
 ## String
-'hello'
-"hello"
-'"hello"'
-"4.6"
+'hello'  
+"hello"  
+'"hello"'  
+"4.6"  
 
 ## Bool
-True
-False
+True  
+False  
 
-basic functions
+### Basic Functions
+
+```python
 print("hello world!")
-print(4.5, "hello") // add a space in between
+print(4.5, "hello")  # add a space in between
 print(4.5)
 
-print("hello", end='\n') // add the line break at the end
-// default is also line break
+print("hello", end='\n')  # add the line break at the end
+# default is also line break
+```
 
 # Variables
 
+```python
 hello = 'tim'
 world = "world"
 world = hello
 hello = 'no'
 
-print(hello, world) // print no hello
-// default is the deep copy
+print(hello, world)  # print no hello
+# default is the deep copy
+```
 
-// python follows snake_case
-// no number at the start
+# Input
 
-# input 
-
-some_variable = input('Name: ') // default input is in string type
+```python
+some_variable = input('Name: ')  # default input is in string type
 print(some_variable)
+```
 
-# Arithimatic operation
+# Arithmetic Operations
 
+```python
 x = 9
 y = 3
 result = x / y
-print(result)
-// print 3.0
-// throughs the error when the data type or operands are different
-print(int(result))
-// print 3
+print(result)  # prints 3.0
+print(int(result))  # prints 3
 
-print(x//y)
-// print 3
+print(x // y)  # prints 3
 
 x = "hello"
 y = 3
-print(x * y) 
+print(x * y)  # prints hellohellohello
+```
 
-// prints hellohellohello
+# Type
 
-# type
-
+```python
 print(type(var))
+```
 
 # Method
 
+```python
 hello = "hello".upper()
-print(hello)
-// print HELLO
-
-title case uses capitalize
-count function counts the occurance of the substring
-ord('a') returns the int for the character
+print(hello)  # prints HELLO
+```
 
 # Conditional Operator
 
-print('a' > 'Z')
-// compares using the int value representations
-
-print('ab' > 'ad')
-// this is also possible. it compares from left to right character. 
+```python
+print('a' > 'Z')  # compares using the int value representations
+print('ab' > 'ad')  # compares from left to right character
+```
 
 result1 = True
 result2 = False
@@ -171,28 +170,29 @@ for key in x:
 
 # Comprehensions
 
+```python
 x = [x for x in range(5)]
-print(x)
-// [0,1,2,3,4]
+print(x)  # [0, 1, 2, 3, 4]
 
 x = [x + 5 for x in range(5)]
-print(x)
-// [5,6,7,8,9]
+print(x)  # [5, 6, 7, 8, 9]
+```
 
-# function
+# Function
 
+```python
 def func():
     print('Run')
 
-def func(x,y, z = None):
+def func(x, y, z=None):
     print("Run", x, y)
     return x * y, x / y
 
-print(func(5,6))   // print in form of tuple
+print(func(5, 6))  # prints in form of tuple
+r1, r2 = func(5, 6)
+```
 
-r1, r2 = func(5,6)
-
-# args & **kwargs
+# Args & **kwargs
 
 kwargs = keyword arguments
 def func(x):
@@ -234,33 +234,30 @@ func(1,2,3,4,5, one=0, two=1)
 
 // print (1,2,3,4,5) {'one': 0, 'two': 1}
 
-# scope and global
+# Scope and Global
 
+```python
 x = 'tim'
 
 def func(name):
-    x = name // local
+    x = name  # local
 
 print(x)
 func('changed')
-print(x)
-
-// tim
-// tim
+print(x)  # tim, tim
 
 def func(name):
     global x
-    x = name  // global
+    x = name  # global
 
 print(x)
 func('changed')
-print(x)
-
-// tim
-// changed
+print(x)  # tim, changed
+```
 
 # Exception
 
+```python
 try:
     x = 7 / 0
 except Exception as e:
