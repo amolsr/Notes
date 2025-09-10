@@ -1,3 +1,94 @@
+
+# Volatile vs Synchronized in Java Multithreading
+
+This document explains the differences between **`volatile`** and **`synchronized`** in Java multithreading.
+
+---
+
+## 🔹 1. `volatile`
+
+- **What it is**:  
+  A **field modifier** (applied to variables). Ensures that **reads and writes go directly to main memory**, not cached in CPU registers or thread-local memory.  
+
+- **Guarantees**:  
+  - **Visibility**: ✅ A thread reading a volatile variable sees the most recent write by another thread.  
+  - **Atomicity**: ❌ Not guaranteed (except for reads/writes of primitives, including `long` and `double` since Java 5).  
+  - **Ordering**: ✅ Prevents instruction reordering involving the volatile variable.  
+
+- **When to use**:  
+  - When multiple threads read/write a variable, but operations are **independent**.  
+  - Useful for **flags** (e.g., stopping threads).  
+
+- **Example**:
+  ```java
+  class SharedResource {
+      volatile boolean flag = true;
+
+      void runTask() {
+          while (flag) {
+              // do work
+          }
+          System.out.println("Stopped!");
+      }
+
+      void stopTask() {
+          flag = false; // visible immediately to other threads
+      }
+  }
+  ```
+
+---
+
+## 🔹 2. `synchronized`
+
+- **What it is**:  
+  A **keyword** applied to methods or blocks. Ensures **mutual exclusion (atomicity)** and **visibility**.  
+
+- **Guarantees**:  
+  - **Atomicity**: ✅ Only one thread can execute a synchronized block/method at a time for the same monitor.  
+  - **Visibility**: ✅ Changes made by one thread are visible to others once the lock is released.  
+  - **Ordering**: ✅ Locks enforce happens-before relationships.  
+
+- **When to use**:  
+  - When multiple threads modify shared state.  
+  - For compound actions (read-modify-write, like `x++`, `list.add()`).  
+
+- **Example**:
+  ```java
+  class Counter {
+      private int count = 0;
+
+      public synchronized void increment() {
+          count++; // atomic now
+      }
+
+      public synchronized int getCount() {
+          return count;
+      }
+  }
+  ```
+
+---
+
+## ⚡ Key Differences
+
+| Aspect         | `volatile`                           | `synchronized`                        |
+|----------------|--------------------------------------|----------------------------------------|
+| Type           | Variable modifier                    | Block/method modifier                  |
+| Scope          | One variable only                    | Group of statements (critical section) |
+| Visibility     | ✅ Ensures visibility                | ✅ Ensures visibility                  |
+| Atomicity      | ❌ Not guaranteed (except reads/writes) | ✅ Guaranteed                          |
+| Locking        | ❌ No locking (non-blocking)         | ✅ Uses lock (monitor)                 |
+| Performance    | ✅ Faster (no lock overhead)         | ❌ Slower (locking overhead)           |
+| Use Case       | Status flags, config values          | Counters, collections, shared state    |
+
+---
+
+## 👉 Summary
+- Use **`volatile`** → when you only need **visibility** for simple variables (e.g., flags).  
+- Use **`synchronized`** → when you need **atomicity + visibility** (for compound operations on shared state).  
+
+
 # Difference Between HashMap, Hashtable, and ConcurrentHashMap
 
 This document explains the differences between **HashMap**, **Hashtable**, and **ConcurrentHashMap** in Java.
